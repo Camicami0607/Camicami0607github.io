@@ -1,0 +1,328 @@
+/* 去掉所有标签的默认内外边距 */
+*{
+	/* 外边距为0 */
+	margin: 0;
+	/* 内边距为0 */
+	padding: 0;
+}
+/* 去除列表的默认样式 */
+li{
+	list-style: none;
+}
+/* 去掉超链接a标签的默认下划线 */
+a{
+	text-decoration: none;
+}
+/* 导航栏 */
+/* 导航栏上侧 */
+.header-top{
+	/* 设置背景颜色 */
+	background: #FFFFFF;
+	/* 长度设置为100% */
+	width: 100%;
+	/* 设置高度 */
+	height: 80px;
+}
+/* 顶部内容区 */
+.header-top-f{
+	/* 设置长度 */
+	width: 1200px;
+	/* 居中 */
+	margin: auto;
+}
+.header-top-f img{
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 设置高度 */
+	height: 50px;
+	/* 15px的上侧外边距 */
+	margin-top: 15px;
+}
+.search{
+	/* 右浮动 靠右对齐 */
+	float: right;
+	/* 设置高度为30px */
+	height: 30px;
+	/* 25px的上侧外边距 */
+	margin-top: 25px;
+	/* 设置1px的实线边框 颜色为下侧色值 */
+	border: 1px solid #FFC454;
+}
+/* 搜索框的input */
+.search input{
+	/* 去除默认效果 */
+	outline: none;
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 设置长度 */
+	width: 200px;
+	/* 设置高度 */
+	height: 30px;
+	/* 去除默认边框 */
+	border: none;
+	/* 设置5px的左侧内边距 */
+	padding-left: 5px;
+	
+}
+/* 搜索的按钮 */
+.search button{
+	/* 鼠标移入效果设置为触手 */
+	cursor: pointer;
+	/* 左浮动 靠左对齐 */
+	float: left;
+	/* 设置长度 */
+	width: 60px;
+	/* 设置高度 */
+	height: 30px;
+	/* 设置按钮颜色 */
+	color: #FFFFFF;
+	/* 设置按钮背景 */
+	background: #FFC454;
+	/* 去除默认边框 */
+	border: none;
+}
+/* 导航区域 */
+.header{
+	/* 背景颜色 */
+	background: #FFC454;
+	/* 设置高度 */
+	height: 50px;
+	/* 设置行高 */
+	line-height: 50px;
+}
+.header ul{
+	/* 长度设置 */
+	width: 1200px;
+	/* 居中显示 */
+	margin: auto;
+}
+/* 导航内的无序列表 */
+.header ul li{
+	/* 设置为行内块级元素 */
+	display: inline-block;
+}
+/* 导航栏内的a标签 */
+.header ul li a{
+	/* 设置为块级元素 */
+	display: block;
+	/* 设置上下内边距为0 左右内边距为40px */
+	padding: 0 40px;
+	color: #FFFFFF;
+}
+/* 设置class为active 下的a */
+.header ul .active a{
+	/* 设置背景 */
+	background: #FF7D30;
+}
+/* 鼠标移入效果 */
+.header ul li a:hover{
+	/* 设置背景 */
+	background: #FF7D30;
+}
+/* 大图 */
+.banner{
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距10px  左右居中 */
+	margin: 10px auto;
+}
+/* 图片 */
+.banner img{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 350px;
+	/* 图片超出大小自动延展 防止压缩 */
+	object-fit: cover;
+}
+/* MBTI（Myers-Briggs Type Indicator）介绍 */
+.title{
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距30px 左右居中 */
+	margin: 30px auto;
+}
+.title h3{
+	/* 左侧5px的边框 */
+	border-left: 5px solid #000000;
+	/* 左侧内边距为10px */
+	padding-left: 10px;
+	/* 设置字体大小 */
+	font-size: 20px;
+	/* 设置高度 */
+	height: 25px;
+	/* 设置行高 */
+	line-height: 25px;
+}
+/* MBTI（Myers-Briggs Type Indicator）介绍  */
+.about{
+	/* 弹性布局 */
+	display: flex;
+	/* 两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 居中显示 */
+	margin: auto;
+	/* 阴影 */
+	box-shadow: 2px 1px 10px #CCCCCC;
+}
+.about img{
+	/* 设置长度 */
+	width: 550px;
+	/* 设置高度 */
+	height: 100%;
+	/* 防止图片压缩 */
+	object-fit: cover;
+}
+.about-text{
+	/* 设置长度 */
+	width: 590px;
+	/* 上下左右内边距为20 */
+	padding: 20px;
+}
+.about-text h4{
+	/* 设置字体 */
+	font-size: 24px;
+	/* 设置颜色 */
+	color: #333333;
+	/* 字体粗细 */
+	font-weight: normal;
+	/* 文字间距 */
+	letter-spacing: 2px;
+	/* 下外边距为15px */
+	margin-bottom: 15px;
+}
+.about-text p{
+	/* 设置行高 */
+	line-height: 1.8;
+}
+.about-text a{
+	/* 设置成块级元素 单独一行显示 */
+	display: block;
+	/* 设置背景颜色 */
+	background: #333333;
+	/* 字体大小 */
+	font-size: 14px;
+	/* 字体颜色 */
+	color: #FFFFFF;
+	/* 设置长度 */
+	width: 100px;
+	/* 设置高度 */
+	height: 40px;
+	/* 设置行高 */
+	line-height: 40px;
+	/* 文字居中 */
+	text-align: center;
+	/* 上侧外边距为10 */
+	margin-top: 10px;
+	/* 圆弧为6px */
+	border-radius: 6px;
+}
+/* MBTI介绍 */
+.img{
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上下外边距50px 左右居中 */
+	margin: 50px auto;
+}
+.img ul{
+	/* 弹性布局 */
+	display: flex;
+	/* 换行处理 */
+	flex-wrap: wrap;
+	/* 子元素横向两端对齐 */
+	justify-content: space-between;
+}
+.img ul li {
+	list-style: none;
+	/* 相对定位 */
+	position: relative;
+	/* 设置长度 */
+	width: 280px;
+	/* 设置高度 */
+	height: 320px;
+	/* 下侧外边距为20px */
+	margin-bottom: 20px;
+}
+.img img{
+	display: block;
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 100%;
+	/* 防止图片变形 */
+	object-fit: cover;
+}
+.img p{
+	/* 绝对定位 */
+	position: absolute;
+	/* 父级底部的0位置 */
+	bottom: 0;
+	/* 父级左侧的0位置 */
+	left: 0;
+	/* 设置字体大小 */
+	font-size: 16px;
+	/* 设置长度 */
+	width: 92%;
+	/* 上下左右的内边距为父级的4% */
+	padding: 4%;
+	/* 设置字体颜色 */
+	color: #FFFFFF;
+	/* 设置背景颜色*/
+	background-color: rgba(0,0,0,0.4);
+}
+/* 底部 */
+.footer{
+	/* 设置长度 */
+	width: 100%;
+	/* 上下内边距10 左右0 */
+	padding: 10px 0;
+	/* 字体颜色 */
+	color: #FFF;
+	/* 背景颜色 */
+	background: #333;
+	/* 文字居中 */
+	text-align: center;
+	/* 字体大小 */
+	font-size: 14px;
+}/* 介绍 */
+.about-p{
+	/* 设置长度 */
+	width: 1200px;
+	/* 居中显示 */
+	margin: auto;
+}
+.about-p p{
+	/* 设置行高 */
+	line-height: 2.2;
+	/* 字体大小 */
+	font-size: 15px;
+	/* 字体颜色 */
+	color: #4d4d4d;
+}
+/* 图集 */
+.tj{
+	/* 弹性布局 */
+	display: flex;
+	/* 分行展示 */
+	flex-wrap: wrap;
+	/* 子元素横向两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 1200px;
+	/* 上侧外边距为 20px 下侧外边距 0 左右居中显示 */
+	margin:  20px auto 0 auto; 
+}
+.tj img{
+	/* 设置长度 */
+	width: 24%;
+	/* 设置高度 */
+	height: 260px;
+	/* 防止图片变形 */
+	object-fit: cover;
+	/* 下侧外边距为15px */
+	margin-bottom: 15px;
+}
